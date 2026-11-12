@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="CycleBridge.Algorithms/CycleBridge.Algorithms.csproj" />
+  <Project Path="CycleBridge.App/CycleBridge.App.csproj" />
+  <Project Path="CycleBridge.Controls/CycleBridge.Controls.csproj" />
+  <Project Path="CycleBridge.Core/CycleBridge.Core.csproj" />
+  <Project Path="CycleBridge.Layout/CycleBridge.Layout.csproj" />
+  <Project Path="CycleBridge.Presentation/CycleBridge.Presentation.csproj" />
+  <Project Path="CycleBridge.Rendering/CycleBridge.Rendering.csproj" />
+</Solution>

@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12120.119 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleBridge.Algorithms", "CycleBridge.Algorithms\CycleBridge.Algorithms.csproj", "{55669670-2BEF-4130-B8A0-CA56A220CD16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleBridge.App", "CycleBridge.App\CycleBridge.App.csproj", "{23484E6F-27A6-4847-AE6D-E601A790B86D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleBridge.Controls", "CycleBridge.Controls\CycleBridge.Controls.csproj", "{9D1E9267-D1B6-4C95-A86A-2FA1870D6740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleBridge.Core", "CycleBridge.Core\CycleBridge.Core.csproj", "{2C68E0A6-210F-4AD8-B83B-8AED5572C400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleBridge.Layout", "CycleBridge.Layout\CycleBridge.Layout.csproj", "{CBF0B650-E683-46DE-AB1C-8EE7049E29CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleBridge.Presentation", "CycleBridge.Presentation\CycleBridge.Presentation.csproj", "{3C9216F2-E35A-48EC-AE73-4C9CA69E53B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleBridge.Rendering", "CycleBridge.Rendering\CycleBridge.Rendering.csproj", "{740DD27D-3FF7-46D3-BEDB-0E939222DF60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55669670-2BEF-4130-B8A0-CA56A220CD16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55669670-2BEF-4130-B8A0-CA56A220CD16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55669670-2BEF-4130-B8A0-CA56A220CD16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55669670-2BEF-4130-B8A0-CA56A220CD16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23484E6F-27A6-4847-AE6D-E601A790B86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23484E6F-27A6-4847-AE6D-E601A790B86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23484E6F-27A6-4847-AE6D-E601A790B86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23484E6F-27A6-4847-AE6D-E601A790B86D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D1E9267-D1B6-4C95-A86A-2FA1870D6740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D1E9267-D1B6-4C95-A86A-2FA1870D6740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D1E9267-D1B6-4C95-A86A-2FA1870D6740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D1E9267-D1B6-4C95-A86A-2FA1870D6740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C68E0A6-210F-4AD8-B83B-8AED5572C400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C68E0A6-210F-4AD8-B83B-8AED5572C400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C68E0A6-210F-4AD8-B83B-8AED5572C400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C68E0A6-210F-4AD8-B83B-8AED5572C400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF0B650-E683-46DE-AB1C-8EE7049E29CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF0B650-E683-46DE-AB1C-8EE7049E29CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF0B650-E683-46DE-AB1C-8EE7049E29CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF0B650-E683-46DE-AB1C-8EE7049E29CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C9216F2-E35A-48EC-AE73-4C9CA69E53B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9216F2-E35A-48EC-AE73-4C9CA69E53B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9216F2-E35A-48EC-AE73-4C9CA69E53B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9216F2-E35A-48EC-AE73-4C9CA69E53B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{740DD27D-3FF7-46D3-BEDB-0E939222DF60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740DD27D-3FF7-46D3-BEDB-0E939222DF60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740DD27D-3FF7-46D3-BEDB-0E939222DF60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740DD27D-3FF7-46D3-BEDB-0E939222DF60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
