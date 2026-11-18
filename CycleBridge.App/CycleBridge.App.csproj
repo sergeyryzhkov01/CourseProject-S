@@ -102,7 +102,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="exe_11927384.ico" />
-    <Content Include="photo_2026-11-18_19-30-40.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
