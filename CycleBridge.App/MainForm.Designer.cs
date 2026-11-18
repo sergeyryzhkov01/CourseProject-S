@@ -19,11 +19,11 @@
             this.panelLeft = new System.Windows.Forms.Panel();
             this.lstResult = new System.Windows.Forms.ListBox();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.lblHint = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExample = new System.Windows.Forms.Button();
             this.nudN = new System.Windows.Forms.NumericUpDown();
             this.lblN = new System.Windows.Forms.Label();
+            this.btnAbout = new System.Windows.Forms.Button();
             this.panelLeft.SuspendLayout();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudN)).BeginInit();
@@ -60,7 +60,7 @@
             // 
             // panelTop
             // 
-            this.panelTop.Controls.Add(this.lblHint);
+            this.panelTop.Controls.Add(this.btnAbout);
             this.panelTop.Controls.Add(this.btnClear);
             this.panelTop.Controls.Add(this.btnExample);
             this.panelTop.Controls.Add(this.nudN);
@@ -70,15 +70,6 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(290, 200);
             this.panelTop.TabIndex = 0;
-            // 
-            // lblHint
-            // 
-            this.lblHint.Location = new System.Drawing.Point(10, 85);
-            this.lblHint.Name = "lblHint";
-            this.lblHint.Size = new System.Drawing.Size(270, 105);
-            this.lblHint.TabIndex = 4;
-            this.lblHint.Text = "Щёлкните по двум вершинам по очереди, чтобы добавить или удалить ребро между ними" +
-    ".\r\n\r\nКрасные рёбра – мосты.\r\nВыберите цикл в списке, чтобы подсветить его.";
             // 
             // btnClear
             // 
@@ -103,12 +94,24 @@
             // nudN
             // 
             this.nudN.Location = new System.Drawing.Point(130, 10);
-            this.nudN.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
-            this.nudN.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            this.nudN.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.nudN.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudN.Name = "nudN";
             this.nudN.Size = new System.Drawing.Size(60, 20);
             this.nudN.TabIndex = 1;
-            this.nudN.Value = new decimal(new int[] { 8, 0, 0, 0 });
+            this.nudN.Value = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
             this.nudN.ValueChanged += new System.EventHandler(this.nudN_ValueChanged);
             // 
             // lblN
@@ -116,9 +119,20 @@
             this.lblN.AutoSize = true;
             this.lblN.Location = new System.Drawing.Point(10, 14);
             this.lblN.Name = "lblN";
-            this.lblN.Size = new System.Drawing.Size(86, 13);
+            this.lblN.Size = new System.Drawing.Size(83, 13);
             this.lblN.TabIndex = 0;
             this.lblN.Text = "Число вершин:";
+            // 
+            // btnAbout
+            // 
+            this.btnAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnAbout.Location = new System.Drawing.Point(13, 108);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(267, 66);
+            this.btnAbout.TabIndex = 4;
+            this.btnAbout.Text = "О программе";
+            this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // MainForm
             // 
@@ -143,10 +157,10 @@
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.ListBox lstResult;
-        private System.Windows.Forms.Label lblHint;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExample;
         private System.Windows.Forms.NumericUpDown nudN;
         private System.Windows.Forms.Label lblN;
+        private System.Windows.Forms.Button btnAbout;
     }
 }

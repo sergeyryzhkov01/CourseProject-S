@@ -12,6 +12,7 @@ namespace CycleBridge.App
         private Graph graph = new Graph(8);
         private DfsAnalyzer analyzer = new DfsAnalyzer();
         private ResultFormatter formatter = new ResultFormatter();
+        private bool changingVertexCount = false;
         private int firstVertex = 0;
 
         public MainForm()
@@ -66,7 +67,50 @@ namespace CycleBridge.App
 
         private void nudN_ValueChanged(object sender, EventArgs e)
         {
-            graph.Resize((int)nudN.Value);
+            if (changingVertexCount)
+            {
+                return;
+            }
+
+            int newCount = (int)nudN.Value;
+
+            if (newCount > 20 && graph.N <= 20)
+            {
+                DialogResult answer = MessageBox.Show(
+                    "При большом количестве вершин изображение графа может " +
+                    "стать неразборчивым, а программа может работать медленно " +
+                    "или завершиться из-за нехватки памяти.\n\nПродолжить?",
+                    "Предупреждение",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (answer == DialogResult.No)
+                {
+                    changingVertexCount = true;
+                    nudN.Value = graph.N;
+                    changingVertexCount = false;
+                    return;
+                }
+            }
+
+            try
+            {
+                graph.Resize(newCount);
+            }
+            catch (OutOfMemoryException)
+            {
+                MessageBox.Show(
+                    "Недостаточно памяти для создания графа с таким количеством вершин.",
+                    "Ошибка",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
+                changingVertexCount = true;
+                nudN.Value = graph.N;
+                changingVertexCount = false;
+                return;
+            }
+
             firstVertex = 0;
             graphPanel.SelectedVertex = 0;
             Analyze();
@@ -111,6 +155,28 @@ namespace CycleBridge.App
                 graphPanel.HighlightCycle = item.Cycle;
                 graphPanel.HighlightBridge = item.Bridge;
             }
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+        "Программа предназначена для поиска фундаментальных циклов и мостов в неориентированном графе.\n\n" +
+        "Количество вершин задаётся в поле «Число вершин».\n\n" +
+        "Чтобы добавить ребро, последовательно щёлкните по двум вершинам. " +
+        "Если ребро уже существует, оно будет удалено. " +
+        "Повторный щелчок по выбранной вершине отменяет выбор.\n\n" +
+        "Анализ выполняется автоматически после изменения графа. " +
+        "Найденные циклы и мосты отображаются в списке слева.\n\n" +
+        "Чтобы выделить цикл синим цветом, выберите его в списке. " +
+        "Мосты отображаются красным цветом. Выбранный в списке мост " +
+        "выделяется более толстой линией.\n\n" +
+        "Кнопка «Очистить» удаляет все рёбра. " +
+        "Кнопка «Пример» создаёт готовый граф.\n\n" +
+        "При большом числе вершин изображение может стать неразборчивым, " +
+        "а работа программы — замедлиться.",
+        "О программе",
+        MessageBoxButtons.OK,
+        MessageBoxIcon.Information);
         }
     }
 }

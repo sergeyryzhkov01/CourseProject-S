@@ -4,8 +4,6 @@ namespace CycleBridge.Core
 {
     public class Graph
     {
-        public const int MaxN = 20;
-
         private int[,] a;
 
         public int N { get; private set; }

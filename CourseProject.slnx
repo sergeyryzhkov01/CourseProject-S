@@ -1,9 +1,9 @@
 <Solution>
-  <Project Path="CycleBridge.Algorithms/CycleBridge.Algorithms.csproj" />
-  <Project Path="CycleBridge.App/CycleBridge.App.csproj" />
-  <Project Path="CycleBridge.Controls/CycleBridge.Controls.csproj" />
-  <Project Path="CycleBridge.Core/CycleBridge.Core.csproj" />
-  <Project Path="CycleBridge.Layout/CycleBridge.Layout.csproj" />
-  <Project Path="CycleBridge.Presentation/CycleBridge.Presentation.csproj" />
-  <Project Path="CycleBridge.Rendering/CycleBridge.Rendering.csproj" />
+  <Project Path="CycleBridge.Algorithms/CycleBridge.Algorithms.csproj" Id="55669670-2bef-4130-b8a0-ca56a220cd16" />
+  <Project Path="CycleBridge.App/CycleBridge.App.csproj" Id="23484e6f-27a6-4847-ae6d-e601a790b86d" />
+  <Project Path="CycleBridge.Controls/CycleBridge.Controls.csproj" Id="9d1e9267-d1b6-4c95-a86a-2fa1870d6740" />
+  <Project Path="CycleBridge.Core/CycleBridge.Core.csproj" Id="2c68e0a6-210f-4ad8-b83b-8aed5572c400" />
+  <Project Path="CycleBridge.Layout/CycleBridge.Layout.csproj" Id="cbf0b650-e683-46de-ab1c-8ee7049e29ca" />
+  <Project Path="CycleBridge.Presentation/CycleBridge.Presentation.csproj" Id="3c9216f2-e35a-48ec-ae73-4c9ca69e53b1" />
+  <Project Path="CycleBridge.Rendering/CycleBridge.Rendering.csproj" Id="740dd27d-3ff7-46d3-bedb-0e939222df60" />
 </Solution>
